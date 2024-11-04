@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'archivo';
+  src: url('./assets/fonts/Archivo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'archivo-italic';
+  src: url('./assets/fonts/Archivo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lilita';
+  src: url('./assets/fonts/LilitaOne-Regular.ttf') format('truetype');
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hover\:animate-slideUp:hover {
+  animation: slideUp 0.3s ease-out forwards;
+}
